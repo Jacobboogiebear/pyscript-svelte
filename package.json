@@ -1,0 +1,19 @@
+{
+  "name": "pyscriptsvelte",
+  "displayName": "pyscript-svelte",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [{
+      "scopeName": "text.pyscript-svelte.injection",
+      "path": "./syntaxes/pyscriptsvelte.tmLanguage.json",
+      "injectTo": ["source.svelte"]
+    }]
+  }
+}

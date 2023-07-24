@@ -1,0 +1,158 @@
+{
+    "name": "pyscript",
+    "injectionSelector": "L:source.svelte",
+    "scopeName": "text.pyscript-svelte.injection",
+    "fileTypes": ["svelte"],
+    "patterns": [
+        {
+            "begin": "(<)(py-script)(.*?)(>)",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.scope.tag.py-script.svelte meta.tag.start.svelte punctuation.definition.tag.begin.svelte"
+                },
+                "2": {
+                    "name": "meta.scope.tag.py-script.svelte meta.tag.start.svelte meta.tag.custom.svelte entity.name.tag.svelte"
+                },
+                "3": {
+                    "patterns": [
+                        {
+                            "match": " (src)(=)(\")(.*?)(\")",
+                            "captures": {
+                                "1": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte entity.other.attribute-name.svelte"
+                                },
+                                "2": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte punctuation.separator.key-value.svelte"
+                                },
+                                "3": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte punctuation.definition.string.begin.svelte"
+                                },
+                                "4": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte"
+                                },
+                                "5": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte punctuation.definition.string.end.svelte"
+                                }
+                            }
+                        },
+                        {
+                            "match": " (output)(=)(\")(.*)(\")",
+                            "captures": {
+                                "1": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte entity.other.attribute-name.svelte"
+                                },
+                                "2": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte punctuation.separator.key-value.svelte"
+                                },
+                                "3": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte punctuation.definition.string.begin.svelte"
+                                },
+                                "4": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte"
+                                },
+                                "5": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte punctuation.definition.string.end.svelte"
+                                }
+                            }
+                        },
+                        {
+                            "match": " (stderr)(=)(\")(.*)(\")",
+                            "captures": {
+                                "1": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte entity.other.attribute-name.svelte"
+                                },
+                                "2": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte punctuation.separator.key-value.svelte"
+                                },
+                                "3": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte punctuation.definition.string.begin.svelte"
+                                },
+                                "4": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte"
+                                },
+                                "5": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte punctuation.definition.string.end.svelte"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "4": {
+                    "name": "meta.scope.tag.py-script.svelte meta.tag.start.svelte punctuation.definition.tag.end.svelte"
+                }
+            },
+            "end": "(</)(py-script)(>)",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.scope.tag.py-script.svelte meta.tag.end.svelte punctuation.definition.tag.begin.svelte"
+                },
+                "2": {
+                    "name": "meta.scope.tag.py-script.svelte meta.tag.end.svelte meta.tag.custom.svelte entity.name.tag.svelte"
+                },
+                "3": {
+                    "name": "meta.scope.tag.py-script.svelte meta.tag.end.svelte punctuation.definition.tag.end.svelte"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.python"
+                }
+            ]
+        },
+        {
+            "begin": "(<)(py-config)(.*?)(>)",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte punctuation.definition.tag.begin.svelte"
+                },
+                "2": {
+                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.tag.custom.svelte entity.name.tag.svelte"
+                },
+                "3": {
+                    "patterns": [
+                        {
+                            "match": " (src)(=)(\")(.*?)(\")",
+                            "captures": {
+                                "1": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte entity.other.attribute-name.svelte"
+                                },
+                                "2": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte punctuation.separator.key-value.svelte"
+                                },
+                                "3": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte punctuation.definition.string.begin.svelte"
+                                },
+                                "4": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte"
+                                },
+                                "5": {
+                                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte meta.attribute.src.svelte string.quoted.svelte punctuation.definition.string.end.svelte"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "4": {
+                    "name": "meta.scope.tag.py-config.svelte meta.tag.start.svelte punctuation.definition.tag.end.svelte"
+                }
+            },
+            "end": "(</)(py-config)(>)",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.scope.tag.py-config.svelte meta.tag.end.svelte punctuation.definition.tag.begin.svelte"
+                },
+                "2": {
+                    "name": "meta.scope.tag.py-config.svelte meta.tag.end.svelte meta.tag.custom.svelte entity.name.tag.svelte"
+                },
+                "3": {
+                    "name": "meta.scope.tag.py-config.svelte meta.tag.end.svelte punctuation.definition.tag.end.svelte"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.toml"
+                }
+            ]
+        }
+    ]
+}
